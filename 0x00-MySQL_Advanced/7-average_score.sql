@@ -1,3 +1,6 @@
+-- This SQL script creates a stored procedure named 'ComputeAverageScoreForUser' which takes in one parameter user_id.
+-- It computes the average score for a user by first summing up all the scores of the user from the 'corrections' table, counting the number of projects, and then dividing the total score by the number of projects, and then updating the 'average_score' field of the user in the 'users' table.
+
 DROP PROCEDURE IF EXISTS ComputeAverageScoreForUser;
 DELIMITER $$
 CREATE PROCEDURE ComputeAverageScoreForUser (user_id INT)

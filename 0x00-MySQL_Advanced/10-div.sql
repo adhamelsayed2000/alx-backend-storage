@@ -1,3 +1,5 @@
+-- This SQL script creates a function named 'SafeDiv' which takes in two parameters a and b.
+-- It performs a safe division of a by b, returning 0 if b is 0 to avoid a divide by zero error.
 DROP FUNCTION IF EXISTS SafeDiv;
 DELIMITER $$
 CREATE FUNCTION SafeDiv (a INT, b INT)
